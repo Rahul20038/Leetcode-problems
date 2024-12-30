@@ -6,7 +6,7 @@ class Treenode:
         self.right = right
 
 class Solution:
-    def isSameTree(p: Treenode, q: Treenode ) -> bool:
+    def isSameTree(self, p: Treenode, q: Treenode ) -> bool:
         if p == None and q == None:
             return True
         if p == None or q == None:
@@ -21,4 +21,5 @@ root1.right = Treenode(3)
 root2 = Treenode(1)
 root2.left = Treenode(2)
 root2.right = Treenode(3)
-print(isSameTree(root1, root2))
+solution = Solution()
+print(solution.isSameTree(root1, root2))
